@@ -1,0 +1,22 @@
+﻿<Window x:Class="SimpleTextEditor.ColorDialog"
+        
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+      xmlns:local="clr-namespace:SimpleTextEditor"
+
+      Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Images\ColorSwatchSquare.png"
+
+      Title="Pick Color" Height="589.058" 
+
+      KeyDown="Window_KeyDown"
+
+      Width="644.676" 
+
+      WindowStartupLocation="CenterOwner">
+    <local:ColorPicker x:Name="colorPicker" Margin="14,65,2,57"/>
+    
+    
+
+</Window>

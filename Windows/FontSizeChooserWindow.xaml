@@ -1,0 +1,14 @@
+﻿<Window x:Class="SimpleTextEditor.FontSizeChooserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleTextEditor"
+        mc:Ignorable="d"
+        Title="FontSizeChooserWindow" Height="300" Width="300">
+    <Grid>
+        <ComboBox x:Name="fontSizeComboBox" HorizontalAlignment="Left" Margin="85,63,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnFontSize" Content="OK" HorizontalAlignment="Left" Margin="85,116,0,0" VerticalAlignment="Top" Width="75" Click="btnFontSize_Click"/>
+
+    </Grid>
+</Window>

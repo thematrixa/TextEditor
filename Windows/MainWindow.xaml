@@ -1,0 +1,39 @@
+﻿<Window x:Class="SimpleTextEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleTextEditor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <RichTextBox x:Name="Textbox" Margin="0,25,0,0">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Menu DockPanel.Dock="Top" Margin="0,0,0,297" Height="25">
+            <MenuItem Header="_File"  Height="25" >
+                <MenuItem x:Name="openBut" Header="_Open" Click="openBut_Click" />
+                <MenuItem x:Name="closeBut" Header="_Close" />
+                <MenuItem x:Name="saveBut" Header="_Save" Click="saveBut_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Edit"  Height="25">
+                <MenuItem x:Name="undoBut" Header="_Undo" Click="undoBut_Click"/>
+                <MenuItem x:Name="redoBut" Header="_Redo" Click="redoBut_Click"/>
+                <MenuItem x:Name="copyBut" Header="_Copy" Click="copyBut_Click"/>
+                <MenuItem x:Name="cutBut" Header="_Cut" Click="cutBut_Click"/>
+                <MenuItem x:Name="pasteBut" Header="_Paste" Click="pasteBut_Click"/>
+                <MenuItem x:Name="selectAllBut" Header="_Select All" Click="selectAllBut_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Text"  Height="25">
+                <MenuItem x:Name="fontBut" Header="_Font" Click="fontBut_Click"/>
+                <MenuItem x:Name="colorBut" Header="_Color" Click="colorBut_Click"/>
+                <MenuItem x:Name="fontSizeBut" Header="_Font Size" Click="fontSizeBut_Click"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>
